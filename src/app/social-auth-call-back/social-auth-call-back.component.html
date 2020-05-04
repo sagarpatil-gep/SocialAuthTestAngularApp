@@ -1,0 +1,28 @@
+
+<form class="form-container" [formGroup]="customerForm">
+    <div style="padding-top: 90px;">        
+        <p>social-auth-call-back works!</p>
+    <div>        
+        <label>
+            Email:          
+            <!-- <input type="text"  formControlName="emailid"/> -->
+          </label>   
+          <label>{{getControlLabel('emailid')}}</label> 
+          <br/>          
+          <label>
+            Error:            
+          </label> 
+          <label>{{getControlLabel('error')}}</label>
+          <br/>          
+          <label>
+            Status code:       
+          </label> 
+          <label>{{getControlLabel('statusCode')}}</label>
+          <br/>          
+          <label>
+            Error Type:      
+          </label> 
+          <label>{{getControlLabel('errortype')}}</label>
+      </div>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+<form class="form-container" [formGroup]="customerForm">
+<div style="padding-top: 90px;">
+<p>social-auth-test</p>
+<div>
+    
+    <label>
+        Email Id:
+        <input type="text" formControlName="emailid"/>
+      </label>
+      <br/>
+      <br/>
+      Provider Type:
+    <select formControlName="providertype" >
+        <option>select provider</option>
+        <option>Microsoft</option>
+        <option>Google</option>
+    </select>
+    <br/>
+    <br/>
+      <button (click)="SubmitForm()">Submit</button>
+   
+  </div>
+</div>
+
+</form>
